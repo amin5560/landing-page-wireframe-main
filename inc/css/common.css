@@ -1,0 +1,32 @@
+/* global */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+/* header start */
+header {
+  background-color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.logo-img {
+  display: inline-block;
+  background-color: slateblue;
+  color: #fff;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+  width: 100px;
+  position: relative;
+}
+.logo-img:before {
+  content: '';
+  position: absolute;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  border: 1px solid slateblue;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 5px 0 #695acd;
+}
